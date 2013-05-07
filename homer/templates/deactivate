@@ -1,0 +1,16 @@
+##
+# Homer
+# 
+# XXX: This is not meant to be exectued. Instead, this should
+#   be sourced!!
+##
+
+# Remove non-destructive paths
+unset HOMER_PATH
+unset HOMER_ENV
+
+# Bring back the old paths.
+export PATH=${_HOMER_OLD_PATH}
+
+# Remove a backup for old paths
+unset _HOMER_OLD_PATH

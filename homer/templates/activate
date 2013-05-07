@@ -1,0 +1,16 @@
+##
+# Homer
+# 
+# XXX: This is not meant to be exectued. Instead, this should
+#   be sourced!!
+##
+
+# Set non-destructive paths
+export HOMER_PATH={{ environment_path }}
+export HOMER_ENV={{ environment }}
+
+# Create a backup for old paths
+export _HOMER_OLD_PATH=${PATH}
+
+# Set the new $PATH appending the binaries stored in homer.
+export PATH=${HOMER_PATH}/bin:$PATH
